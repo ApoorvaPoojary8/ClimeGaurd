@@ -1,5 +1,3 @@
-Got it 🙂 — you want the entire README.md contents wrapped inside a single code block so you can copy-paste directly.
-Here it is:
 
 
 ---
