@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ClimeGuard Signup</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container login-container">
+  <!-- Left Welcome Section -->
+  <div class="welcome-section">
+    <h1>Join ClimeGuard</h1>
+    <p>Sign up to access weather risk insights and plan smarter!</p>
+  </div>
+
+  <!-- Right Signup Section -->
+  <div class="login-section">
+    <div class="login-form">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Full Name" required/>
+        <input type="email" id="email" placeholder="Email" required/>
+        <input type="password" id="password" placeholder="Password" required/>
+        <button type="submit" class="login-btn">Sign Up</button>
+      </form>
+
+      <p style="margin-top: 20px; color: #fff;">
+        Already have an account? <a href="index.html" style="color:#ff416c;">Login</a>
+      </p>
+
+      <div id="signupMsg" class="result"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

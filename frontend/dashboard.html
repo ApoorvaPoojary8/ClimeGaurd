@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ClimeGuard Dashboard</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7d8ce9, #f26943, #ec8b70, #e873c6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .dashboard-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+  }
+
+  .dashboard-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .dashboard-container p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="dashboard-container">
+  <h2 id="userName">Welcome 🌤</h2>
+  <p>Get your personalized weather risk prediction for any event.</p>
+  <button class="btn" id="goWeather">Check Weather</button>
+</div>
+
+<script>
+  // Redirect if not logged in
+  const user = localStorage.getItem("user");
+  if (!user) {
+    window.location.href = "index.html";
+  } else {
+    document.getElementById("userName").textContent = `Welcome, ${user} 🌤`;
+  }
+
+  document.getElementById("goWeather").addEventListener("click", () => {
+    window.location.href = "weather.html";
+  });
+</script>
+</body>
+</html>

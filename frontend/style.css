@@ -1,0 +1,172 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #7d8ce9, #f26943, #ec8b70, #e873c6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.35);
+}
+.login-container {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  height: 600px;
+  margin: auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.welcome-section {
+  flex: 1;
+  background: linear-gradient(135deg, #FFB07C, #FF9AA2);
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.welcome-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.login-section {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+}
+.login-form input::placeholder {
+  color: #666;
+}
+.remember-me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.remember-me input {
+  margin-right: 10px;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.login-btn:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+.result {
+  text-align: center;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.green {
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+  color: #155724;
+}
+.yellow {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+  color: #856404;
+}
+.red {
+  background: linear-gradient(45deg, #e52d27, #b31217);
+  color: #fff;
+}
+
+.weather-result-card {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-row {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.weather-row:last-child {
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.advice {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Color-coding */
+.weather-result-card.safe {
+  border-left: 5px solid #4caf50;
+}
+
+.weather-result-card.warning {
+  border-left: 5px solid #ffb400;
+}
+
+.weather-result-card.not-recommended {
+  border-left: 5px solid #ff3b30;
+}
