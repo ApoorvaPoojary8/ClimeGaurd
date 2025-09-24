@@ -42,33 +42,6 @@ It uses *NASA POWER API* and *OpenWeather API* for accurate forecasts.
 * 🌤 *OpenWeather API* → Real-time fallback weather  
 * ☀ *NASA POWER API* → Temperature, Rainfall & Wind data  
 
----
-
-## 📂 Project Structure
-
-
-NASA - COPY/
-│               
-│
-├── backend/
-│   ├── node_modules/       # Installed backend dependencies
-│   ├── .env                # Environment variables (API keys etc.)
-│   ├── package.json        # Backend dependencies & scripts
-│   ├── package-lock.json
-│   ├── riskEvaluator.js    # Custom logic for risk calculations
-│   └── server.js           # Express server entry point
-│
-├── frontend/
-│   ├── dashboard.html      # Dashboard page
-│   ├── index.html          # Login page
-│   ├── package-lock.json   # (if you installed something for frontend)
-│   ├── script.js           # Frontend logic / API calls
-│   ├── signup.html         # Signup page
-│   ├── style.css           # Styles
-│   └── weather.html        # Weather risk page
-│
-└── README.md
-
 
 ---
 
