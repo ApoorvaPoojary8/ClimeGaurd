@@ -85,17 +85,7 @@ Simply open frontend/index.html in your browser.
 
 * 🔑 *Login & Signup* – Secure access  
 * 📊 *Dashboard* – Quick access to weather check  
-* 🌦 *Weather Risk Page* – Risk results with colors  
-
----
-
-## 👩‍💻 Team
-
-* *Apoorva* – Project Lead & Backend Developer  
-* *Ananya* – Frontend Developer  
-* *Aditi* – UI Design & Visualizations  
-* *Bhoomika* – Data Analyst (Forecasting & Risk Models)  
-* *Anushree* – Testing & Deployment  
+* 🌦 *Weather Risk Page* – Risk results with colors   
 
 ---
 
